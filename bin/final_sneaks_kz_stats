@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
+require './lib/final_sneaks_kz_stats'
 
-FinalSneaksKzServer::CLI.new.call
+FinalSneaksKzStats::CLI.new.call
