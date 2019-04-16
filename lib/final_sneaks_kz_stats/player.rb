@@ -1,5 +1,6 @@
 require "nokogiri"
 require "open-uri"
+require "pry"
 
 
 class FinalSneaksKzStats::Player
@@ -13,6 +14,7 @@ class FinalSneaksKzStats::Player
   def self.new_five_from_url(url)
     doc = open(url)
     html = Nokogiri::HTML(doc)
+    binding.pry
     html.css()
     
   end

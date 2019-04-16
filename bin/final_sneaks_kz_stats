@@ -2,3 +2,5 @@
 require './lib/final_sneaks_kz_stats'
 
 FinalSneaksKzStats::CLI.new.call
+
+FinalSneaksKzStats::Player.new_five_from_url("https://snksrv.com/kzstats/#/players/")
